@@ -1,7 +1,8 @@
 const HomePage = () => {
   return (
-    <div className="text-3xl font-bold">
-      To do list
+    <div>
+      <h1 className="text-3xl font-bold p-4">Weekly List</h1>
+
     </div>
   );
 };
