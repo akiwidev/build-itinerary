@@ -1,7 +1,12 @@
 
 const SideMenu = () => {
     return (
-        <div className="border-2 border-purple-500 w-52">SideMenu</div>
+        <div className="w-52 text-center p-4 bg-slate-50 border-slate-200 opacity-90 rounded space-y-4">
+            <h3>Purpose of Travel</h3>
+            <h3>Destinations</h3>
+            <h3>Hotels</h3>
+            <h3>Extras</h3>
+        </div>
     )
 }
 
