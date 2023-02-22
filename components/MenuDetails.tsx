@@ -4,7 +4,7 @@ type MenuDetailsProps = {
 
 const MenuDetails = (props: MenuDetailsProps) => {
     return (
-        <div className="grow p-4 bg-slate-50 opacity-90 rounded">{props.selectedItem}</div>
+        <div className="grow p-4 bg-slate-50 opacity-70 rounded">{props.selectedItem}</div>
     )
 }
 
