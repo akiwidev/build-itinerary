@@ -5,11 +5,13 @@ import { Cart } from '../components/Cart'
 
 const HomePage = () => {
   return (
-    <div className="h-screen border-2 border-red-400">
+    <div className="h-screen flex flex-col">
       <Header />
-      <SideMenu />
-      <MenuDetails />
-      <Cart />
+      <div className='flex grow items-stretch'>
+        <SideMenu />
+        <MenuDetails />
+        <Cart />
+      </div>
     </div>
   );
 };

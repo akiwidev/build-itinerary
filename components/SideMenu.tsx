@@ -1,7 +1,7 @@
 
 const SideMenu = () => {
     return (
-        <div>SideMenu</div>
+        <div className="border-2 border-purple-500 w-52">SideMenu</div>
     )
 }
 
