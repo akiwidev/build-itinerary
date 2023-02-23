@@ -11,15 +11,16 @@ const Card = ({ options }: CardProps) => {
     return (
         <>
             {options.map((option: Option) => (
-                <div className={`flex w-[300px] h-[200px] p-2 space-x-4 overflow-auto shadow-md shadow-rose-200  rounded ${selected === option.id && "shadow-lg shadow-rose-400 rounded"} `} onClick={() => setSelected(option.id)}>
-                    <Image
-                        src={option.image}
-                        alt="Picture of a Hilton hotel"
-                        width={150}
-                        height={200}
-                        className="rounded"
-                    />
-                    <p className="font-bold">{option.title}</p>
+                <div className={`flex flex-col items-center w-[200px] h-[300px] p-2 space-y-4 overflow-auto shadow-md shadow-rose-200  rounded ${selected === option.id && "shadow-lg shadow-rose-400 rounded"} `} onClick={() => setSelected(option.id)}>
+                    <div className="w-[150px] h-[200px] relative">
+                        <Image
+                            src={option.image}
+                            alt="Picture of a Hilton hotel"
+                            fill
+                            className="rounded shadow"
+                        />
+                    </div>
+                    <p className="font-bold text-center">{option.title}</p>
                     {option.costPerNight && <p className="text-right italic">¥70,000 p/night</p>}
                 </div>
             ))}

@@ -47,7 +47,7 @@ const HomePage = () => {
             <div key={item.id} className={`${selected === item.id && "font-bold bg-rose-100"} p-2 rounded hover:cursor-pointer`} onClick={() => setSelected(item.id)}>{item.label}</div>
           ))}
         </div>
-        <div className="flex grow p-4 bg-slate-50 opacity-80 rounded overflow-hidden">
+        <div className="flex flex-wrap grow min-w-[300px] p-4 gap-4 bg-slate-50 opacity-80 rounded overflow-auto">
           {selected === "PURPOSE" && <PurposeDetails />}
           {selected === "DESTINATION" && <DestinationDetails />}
           {selected === "HOTELS" && <HotelDetails />}

@@ -36,9 +36,7 @@ const PurposeDetails = () => {
     ]
 
     return (
-        <div className='flex flex-wrap overflow-auto gap-4 border-2 border-black'>
-            <Card options={purposeOptions} />
-        </div>
+        <Card options={purposeOptions} />
     )
 }
 
