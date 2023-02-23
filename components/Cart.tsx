@@ -2,7 +2,7 @@
 
 const Cart = () => {
     return (
-        <div className="w-64 p-4 bg-slate-50 opacity-90 rounded text-right flex flex-col justify-between">
+        <div className="shrink-0 w-64 p-4 bg-slate-50 opacity-90 rounded text-right flex flex-col justify-between">
             <div>
                 <h3>Budget <span>$____________</span></h3>
                 <h3>No. of people <span>____________</span></h3>

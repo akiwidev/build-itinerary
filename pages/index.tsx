@@ -3,6 +3,10 @@ import { MenuDetails } from '../components/MenuDetails'
 import { Cart } from '../components/Cart'
 import Image from 'next/image';
 import { useState } from 'react';
+import { PurposeDetails } from '../components/PurposeDetails';
+import { DestinationDetails } from '../components/DestinationDetails';
+import { HotelDetails } from '../components/HotelDetails';
+import { ExtraDetails } from '../components/ExtraDetails';
 
 
 const HomePage = () => {
@@ -31,19 +35,24 @@ const HomePage = () => {
     <div className="h-screen flex flex-col p-4">
       <Image
         src='/sakura.jpeg'
-        alt="Picture of a Japanese tori gate in the water"
+        alt="Close up picture of a cherry blossom branch"
         fill
         priority
         className='-z-10'
       />
       <Header />
-      <div className='flex grow items-stretch space-x-4 pt-4'>
-        <div className="w-52 text-center p-4 bg-slate-50 opacity-80 rounded space-y-4">
+      <div className='flex grow items-stretch space-x-4 pt-4 overflow-hidden'>
+        <div className="w-52 shrink-0 text-center p-4 bg-slate-50 opacity-80 rounded space-y-4">
           {menuOptions.map(item => (
             <div key={item.id} className={`${selected === item.id && "font-bold bg-rose-100"} p-2 rounded hover:cursor-pointer`} onClick={() => setSelected(item.id)}>{item.label}</div>
           ))}
         </div>
-        <MenuDetails selectedItem={selected} />
+        <div className="flex grow p-4 bg-slate-50 opacity-80 rounded overflow-hidden">
+          {selected === "PURPOSE" && <PurposeDetails />}
+          {selected === "DESTINATION" && <DestinationDetails />}
+          {selected === "HOTELS" && <HotelDetails />}
+          {selected === "EXTRAS" && <ExtraDetails />}
+        </div>
         <Cart />
       </div>
     </div>
