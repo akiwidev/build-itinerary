@@ -1,5 +1,4 @@
 import { Header } from '../components/Header';
-import { MenuDetails } from '../components/MenuDetails'
 import { Cart } from '../components/Cart'
 import Image from 'next/image';
 import { useState } from 'react';
@@ -7,7 +6,6 @@ import { PurposeDetails } from '../components/PurposeDetails';
 import { DestinationDetails } from '../components/DestinationDetails';
 import { HotelDetails } from '../components/HotelDetails';
 import { ExtraDetails } from '../components/ExtraDetails';
-
 
 const HomePage = () => {
   const [selected, setSelected] = useState<string>("PURPOSE")
