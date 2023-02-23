@@ -51,7 +51,6 @@ type Option = {
     title: string
     image: string
     alt: string
-    costPerNight?: number
 }
 
 export { PurposeDetails }
