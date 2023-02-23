@@ -15,7 +15,7 @@ const Card = ({ options }: CardProps) => {
                     <div className="w-[150px] h-[200px] relative">
                         <Image
                             src={option.image}
-                            alt="Picture of a Hilton hotel"
+                            alt={option.alt}
                             fill
                             className="rounded shadow"
                         />
@@ -32,7 +32,7 @@ type Option = {
     id: string
     title: string
     image: string
-    alt?: string
+    alt: string
     costPerNight?: number
 }
 
