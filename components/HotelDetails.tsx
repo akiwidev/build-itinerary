@@ -7,28 +7,28 @@ const HotelDetails = () => {
             title: 'Hilton',
             image: '/hilton.jpeg',
             alt: 'Picture of the inside of a luxury hotel',
-            costPerNight: '47,300'
+            cost: '47,300 p/night'
         },
         {
             id: 'FOUR SEASONS',
             title: 'Four Seasons',
             image: '/fourSeasons.jpeg',
             alt: 'Picture of a luxury hotel restaurant with lots of wood and plants',
-            costPerNight: '240,000'
+            cost: '240,000 p/night'
         },
         {
             id: 'HYATT',
             title: 'Hyatt',
             image: '/hyatt.jpeg',
             alt: 'Picture of a hotel bedroom with a lamp on the side table',
-            costPerNight: '43,500'
+            cost: '43,500 p/night'
         },
         {
             id: 'CERULEAN',
             title: 'Cerulean Tower',
             image: '/cerulean.jpeg',
             alt: 'Picture of a hotel bedroom with a lamp on the side table',
-            costPerNight: '37,000'
+            cost: '37,000 p/night'
         },
     ]
 
@@ -42,7 +42,7 @@ type Option = {
     title: string
     image: string
     alt: string
-    costPerNight: string
+    cost: string
 }
 
 export { HotelDetails }

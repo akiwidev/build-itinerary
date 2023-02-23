@@ -21,7 +21,7 @@ const Card = ({ options }: CardProps) => {
                         />
                     </div>
                     <p className="font-bold text-center">{option.title}</p>
-                    {option.costPerNight && <p className="text-right italic">¥{option.costPerNight} p/night</p>}
+                    {option.cost && <p className="text-right italic">¥{option.cost}</p>}
                 </div>
             ))}
         </>
@@ -33,7 +33,7 @@ type Option = {
     title: string
     image: string
     alt: string
-    costPerNight?: string
+    cost?: string
 }
 
 export { Card }

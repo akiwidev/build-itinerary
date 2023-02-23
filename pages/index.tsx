@@ -32,7 +32,7 @@ const HomePage = () => {
   ]
 
   return (
-    <div className="h-screen flex flex-col p-4">
+    <div className="h-screen min-w-[950px] flex flex-col p-4">
       <Image
         src='/sakura.jpeg'
         alt="Close up picture of a cherry blossom branch"
